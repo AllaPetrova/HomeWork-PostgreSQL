@@ -3,7 +3,8 @@ INSERT INTO albums(id, name, year_of_release) VALUES
 (2, 'D.I.S.C.O.', 1980),
 (3, 'Rockin’ at the Hops', 1960),
 (4, 'I Love You', 2013),
-(5, 'Strangers in the Night', 1966);
+(5, 'Strangers in the Night', 1966),
+(6, 'Norman Fucking Rockwell!', 2019);
 INSERT INTO genre(name) VALUES
 ('Blues'),
 ('Disco'),
@@ -11,13 +12,14 @@ INSERT INTO genre(name) VALUES
 ('Аlternative rock '),
 ('Indie rock'),
 ('Vocal jazz'),
-('Pop');
+('Pop'),
 INSERT INTO executor(name) VALUES
 ('Joe Cocker'),
 ('Ottawan'),
 ('Chuck Berry'),
 ('The Neighbourhood'),
-('Frank Sinatra');
+('Frank Sinatra'),
+('Lana Del Rey');
 INSERT INTO genreexecutor(genre_id, executor_id) VALUES
 (1, 1),
 (2, 2),
@@ -25,13 +27,15 @@ INSERT INTO genreexecutor(genre_id, executor_id) VALUES
 (4, 4),
 (5, 4),
 (6, 5),
-(7, 5);
+(7, 5),
+(7, 6);
 INSERT INTO executoralbums(executor_id, albums_id) VALUES
 (1, 1),
 (2, 2),
 (3, 3),
 (4, 4),
-(5, 5);
+(5, 5),
+(6, 6);
 INSERT INTO tracks(id, name, albums_id, duration) VALUES
 (1, 'Unchain My Heart', 1, '00:05:04'),
 (2, 'Trust in Meс', 1, '00:04:14'),
@@ -45,7 +49,9 @@ INSERT INTO tracks(id, name, albums_id, duration) VALUES
 (10, 'Female Robbery', 4, '00:03:29'),
 (11, 'Strangers in the Night', 5, '00:02:25'),
 (12, 'My Baby Just Cares for Me', 5, '00:02:30'),
-(13, 'You"re Driving Me Crazy', 5, '00:02:15');  
+(13, 'You"re Driving Me Crazy', 5, '00:02:15'),
+(14, 'California', 6, '00:05:06'), 
+(15, 'The Next Best American Record', 6, '00:05:49');  
 INSERT INTO collection(id, name, year_of_release) VALUES
 (1, 'The Ultimate Collection ', 2003),
 (2, 'Alle Hits auf einer CD Ottawan ', 2009),
