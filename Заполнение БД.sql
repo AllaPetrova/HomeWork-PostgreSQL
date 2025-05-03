@@ -12,7 +12,7 @@ INSERT INTO genre(name) VALUES
 ('Аlternative rock '),
 ('Indie rock'),
 ('Vocal jazz'),
-('Pop'),
+('Pop');
 INSERT INTO executor(name) VALUES
 ('Joe Cocker'),
 ('Ottawan'),
